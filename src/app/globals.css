@@ -1,0 +1,71 @@
+:root {
+  color-scheme: light dark;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.map-container {
+  position: relative;
+  width: min(1200px, 100%);
+  height: min(80vh, 700px);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.6);
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem 3rem;
+  gap: 1.5rem;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+
+.subtitle {
+  max-width: 720px;
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: #cbd5f5;
+  line-height: 1.6;
+}
+
+.attribution {
+  font-size: 0.875rem;
+  color: #94a3b8;
+}
+
+.attribution a {
+  text-decoration: underline;
+}
